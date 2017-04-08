@@ -13,11 +13,13 @@ You know a little bit how to move stuff around with JavaScript.... now let's lea
 
 ## Transitions Redux
 
-**Transitions** let us tell the browser how to change a property over time. They allow certain properties to _transition_ over time. 
+**Transitions** let us tell the browser how to change a property over time. You'll commonly see the `transition` property used on `:hover` and `:focus` states, as we talked about last week.
 
-#### Follow along in the [Codepen](http://codepen.io/jlr7245/pen/zZVJyL?editors=1100)
+However, with `:hover` and `:focus`, we were mostly changing things like background color, font color, etc. Transition can be used with many more properties.
 
-#### For reference:
+### ✨ Follow along in this [Codepen](http://codepen.io/jlr7245/pen/zZVJyL?editors=1100)!!
+
+#### 📚 For reference:
 
 The `transition` property is shorthand for a number of other properties -- like `border` is shorthand for `border-color`, `border-width`, etc. The syntax goes like this:
 

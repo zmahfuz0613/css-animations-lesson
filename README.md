@@ -98,18 +98,17 @@ And here is how you apply an animation rule to a CSS class:
 ```css
 .animate-me {
   animation: NAME duration timing-function delay animation-iteration-count direction fill-mode play-state;
-  /* This is sort of like the transition property shorthand: each of these does 
-     a different thing.
+}
+  /* This is sort of like the transition property shorthand: each of these does a different thing.
      - animation-name: specifies the name of the keyframe rule
      - animation-duration: specifies the number of seconds or milliseconds
      - animation-timing-function: specifies the "speed curve" of the animation
      - animation-delay: specifies a delay before the animation will start
      - animation-iteration-count: specifies how many times an animation should be played
-     - animation-direction: specifies whether or not an animation should be played in reverse outside the time it is executing
+     - animation-direction: specifies whether or not an animation should be played in reverse on alternate cycles
      - animation-fill-mode: specifies what values are applied by the animation outside the time it is executing
      - animation-play-state: specifies whether the animation is running or paused
      */
-}
 ```
 
 (definitions from [W3Schools](https://www.w3schools.com/cssref/css3_pr_animation.asp))

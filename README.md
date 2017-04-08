@@ -135,13 +135,18 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | ![diagram](./assets/keyframes-2.jpg) | <ul><li>The circle does not move at any point.</li> <li>At first the circle is green</li> <li>Then it is purple.</li> <li>Finally, it is red.</li></ul> | <ol><li>`background-color: green;`</li> <li>`background-color: purple;`</li> <li>`background-color: red;`</li></ol> |
 
-# Lab 1
+# 💥 Lab 1
 
-- Work in groups
-- Each group gets an index card with a series of keyframes drawn on it
-- They get some kind of starter CSS and have to write the animation
-- will include: applying syntax, looking up documentation
-- Include links to some documentation
+### Practice with turning drawings into animations using keyframes!
+
+- Find a group! Groups should be 3 or 4 people tops. You can also work in pairs.
+- Create a fork of [this codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100).
+- Come up and get an index card with an animation drawn on it!
+- Make the animation happen! 
+
+**Note**: You won't need to use the `transform` property for any of these animations. We're learning about that next 😉
+
+***
 
 ## Transforms
 
@@ -157,7 +162,7 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
     - rotate multiple boxes
     - hey look, we built a solar system
 
-# Lab 2
+# 💥 Lab 2
 
 ### This is a choose-your-own-adventure lab!!
 

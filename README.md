@@ -37,6 +37,19 @@ So, if we were trying to write a transition rule that smoothly changes the backg
 transition: background-color 2s ease 1s;
 ```
 
+#### Not all properties are "transitionable" or "animatable". 
+
+Here's a table of the most common animatable & non-animatable properties. (It's not an exhaustive list; head over to [W3Schools](https://www.w3schools.com/cssref/css_animatable.asp) for the full list.)
+
+| Animatiable                                            | Not animatable                          |
+|--------------------------------------------------------|-----------------------------------------|
+| background-color, background-position, background-size | background-image, background-blend-mode |
+| top, bottom, left, right                               | position                                |
+| height, width, min-height, min-width                   | -                                       |
+| margin, border, padding                                | box-sizing, border-image                |
+| opacity, visibility                                    | display                                 |
+| most text & font properties                            | font-family                             |
+| -                                                      | float, clear                            |
 
 ## Keyframes & the `animation` property
 

@@ -81,15 +81,20 @@ Keyframe syntax uses `@`, just like media queries, but it looks a little differe
     property: first-value;
   }
   50% {
-    /* the mid-point of the animation */
+    /* the middle state of the animation */
     /* you can have as many mid-points as you want,
        at whatever percentages you want. */
     property: second-value;
   }
   100% {
-    /* the endpoint of the animation */
+    /* the ending state of the animation */
     property: third-value;
   }
+  /* In order for anmiations to happen smoothly, you must
+     animate the same property at every animation !! 
+     For ex, to smoothly animate a circle from left to right,
+     you wouldn't do `left: 0%;` and then `right: 0%;`. You have
+     to keep animating `left`. */
 }
 ```
 
@@ -114,7 +119,11 @@ And here is how you apply an animation rule to a CSS class:
 (definitions from [W3Schools](https://www.w3schools.com/cssref/css3_pr_animation.asp))
 
 
-### ✨ Let's go back to the [Codepen](http://codepen.io/jlr7245/pen/zZVJyL?editors=1100)!!
+### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100)!!
+
+| Keyframes Drawing                    | Description                                                                                                                                             | Expected property value                                                                                             |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| ![diagram](./assets/keyframes-2.jpg) | <ul><li>The circle does not move at any point.</li> <li>At first the circle is green</li> <li>Then it is purple.</li> <li>Finally, it is red.</li></ul> | <ol><li>`background-color: green;`</li> <li>`background-color: purple;`</li> <li>`background-color: red;`</li></ol> |
 
 ### Wait. What's a "speed curve"? What does "fill mode" mean?
 
@@ -152,9 +161,9 @@ These two are a little bit more obscure and difficult to explain. Here's my best
 You can work on your own, in pairs, or in groups of three. Here are your options:
 
 - Add another planet or two to the solar system we've been building!!
-- Interested in how CSS animations can be used for microinteractions? I'll be doing a mini-lecture on that, based on a [dot wiggler](http://codepen.io/jlr7245/pen/zZemXE) I've been testing out.
+- Interested in how CSS animations can be used for microinteractions? I'll be doing a mini-lecture on that, based on a [dot wiggler](http://codepen.io/jlr7245/pen/zZemXE) I've been testing out. (I'll also walk through the DOM stuff that makes the gameboard generate randomly.)
 - Get another index card and test out your skills with the `transform` property!!!
-- Dig into one of the following examples & see if you can understand how they work. Any questions? Ask!
+- Dig into one of the following examples & see if you can understand how it works. Any questions? Ask!
     - [Day Night Simulation](http://codepen.io/Catagen/pen/PqYdXR/)
     - [Flat design camera](http://codepen.io/damienpm/pen/esoJG/)
     - [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz/?editors=1100)

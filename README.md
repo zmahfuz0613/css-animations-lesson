@@ -68,7 +68,61 @@ In web-based animations, keyframes work the same way - they represent the begini
 
 The `transition` property allows us to define a beginning and end point for a state change. However, sometimes you'll want to have an element move through multiple states during an animation. That's where the CSS keyframes rule comes in.
 
+### 📚 Keyframe Syntax
 
+Keyframe syntax uses `@`, just like media queries, but it looks a little different inside. Let's take a look at the bare bones of a keyframe rule:
+
+```css
+/* keyframes keyword, animation name */
+@keyframes ANIMATION-NAME {
+  /* description of the animation */
+  0% {
+    /* the beginning state of the animation */
+    property: first-value;
+  }
+  50% {
+    /* the mid-point of the animation */
+    /* you can have as many mid-points as you want,
+       at whatever percentages you want. */
+    property: second-value;
+  }
+  100% {
+    /* the endpoint of the animation */
+    property: third-value;
+  }
+}
+```
+
+And here is how you apply an animation rule to a CSS class:
+
+```css
+.animate-me {
+  animation: NAME duration timing-function delay animation-iteration-count direction fill-mode play-state;
+  /* This is sort of like the transition property shorthand: each of these does 
+     a different thing.
+     - animation-name: specifies the name of the keyframe rule
+     - animation-duration: specifies the number of seconds or milliseconds
+     - animation-timing-function: specifies the "speed curve" of the animation
+     - animation-delay: specifies a delay before the animation will start
+     - animation-iteration-count: specifies how many times an animation should be played
+     - animation-direction: specifies whether or not an animation should be played in reverse outside the time it is executing
+     - animation-fill-mode: specifies what values are applied by the animation outside the time it is executing
+     - animation-play-state: specifies whether the animation is running or paused
+     */
+}
+```
+
+(definitions from [W3Schools](https://www.w3schools.com/cssref/css3_pr_animation.asp))
+
+
+### ✨ Let's go back to the [Codepen](http://codepen.io/jlr7245/pen/zZVJyL?editors=1100)!!
+
+### Wait. What's a "speed curve"? What does "fill mode" mean?
+
+These two are a little bit more obscure and difficult to explain. Here's my best attempt:
+
+- A **speed curve** specifies the rate at which the paramaters change. [Here's an example site](http://easings.net/) with a bunch of speed curves. This is something you'll have to play around with -- check out the [W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp) for `animation-timing-function`.
+- The **fill mode** describes what happens to the animation after it's done running. Does it stay at the animation endpoint or does it go back to the beginning? If you set `animation-fill-mode` to `forwards`, the animation will stay in the `100%` state after it's finished. [See the W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp) for more information and examples.
 
 # Lab 1
 

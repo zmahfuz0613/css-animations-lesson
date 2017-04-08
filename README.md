@@ -125,7 +125,7 @@ These two are a little bit more obscure and difficult to explain. Here's my best
 - A **speed curve** specifies the rate at which the paramaters change. [Here's an example site](http://easings.net/) with a bunch of speed curves. This is something you'll have to play around with -- check out the [W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp) for `animation-timing-function`.
 - The **fill mode** describes what happens to the animation after it's done running. Does it stay at the animation endpoint or does it go back to the beginning? If you set `animation-fill-mode` to `forwards`, the animation will stay in the `100%` state after it's finished. [See the W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp) for more information and examples.
 
-### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100)!!
+### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/yMdZLv?editors=1100)!!
 
 We'll animate this drawing together. I've done some pseudocoding beforehand, which may feel a little bit like overkill. 
 
@@ -142,9 +142,10 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 - Find a group! Groups should be 3 or 4 people tops. You can also work in pairs.
 - Create a fork of [this codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100).
 - Come up and get an index card with an animation drawn on it!
+- Write out the steps you think the animation will need.
 - Make the animation happen! 
 
-**Note**: You won't need to use the `transform` property for any of these animations. We're learning about that next 😉
+**Note**: You won't need to use the `transform` property for this lab. We're learning about that next 😉
 
 ***
 

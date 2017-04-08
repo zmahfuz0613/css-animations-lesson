@@ -121,6 +121,10 @@ And here is how you apply an animation rule to a CSS class:
 
 ### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100)!!
 
+We'll animate this drawing together. I've done some pseudocoding beforehand, which may feel a little bit like overkill. 
+
+But, like I was saying on Friday when we were talking about Rock Paper Scissors, it's good practice to get used to thinking about small problems in this way. Breaking up large problems into small pieces will be easier down the line.
+
 | Keyframes Drawing                    | Description                                                                                                                                             | Expected property value                                                                                             |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | ![diagram](./assets/keyframes-2.jpg) | <ul><li>The circle does not move at any point.</li> <li>At first the circle is green</li> <li>Then it is purple.</li> <li>Finally, it is red.</li></ul> | <ol><li>`background-color: green;`</li> <li>`background-color: purple;`</li> <li>`background-color: red;`</li></ol> |

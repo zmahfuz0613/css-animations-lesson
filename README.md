@@ -5,7 +5,7 @@ You know a little bit how to move stuff around with JavaScript.... now let's lea
 ### Learning Objectives
 
 - Understand how traditional hand-drawn keyframe animation and CSS animation relate
-- Use the `transition` property to animate elements
+- Use the `animation` property to animate elements
 - Use the `transform` property to change elements
 - Recognize the different values for the `transform` property and see what they do
 - Recognize the parts of keyframe syntax
@@ -13,9 +13,28 @@ You know a little bit how to move stuff around with JavaScript.... now let's lea
 
 ## Transitions Redux
 
-- Go back over the parts of the transition property -- duration, which one, ease, etc.
-- A circle that falls on hover using a transition value
-- What if we wanted it to bounce?
+**Transitions** let us tell the browser how to change a property over time. They allow certain properties to _transition_ over time. 
+
+#### Follow along in the [Codepen](http://codepen.io/jlr7245/pen/zZVJyL?editors=1100)
+
+#### For reference:
+
+The `transition` property is shorthand for a number of other properties -- like `border` is shorthand for `border-color`, `border-width`, etc. The syntax goes like this:
+
+```css
+transition: property duration timing-function delay;
+/* property: which property the transition effect is for
+   duration: how many seconds or milliseconds the transition effect takes
+   timing-function: specifies the "speed curve" of the transition effect
+   delay: defines with the transition effect will start */
+```
+
+So, if we were trying to write a transition rule that smoothly changes the background color over 2 seconds starting 1s after the action that causes the transition, we'd write:
+
+```css
+transition: background-color 2s ease 1s;
+```
+
 
 ## Keyframes & the `animation` property
 

@@ -118,6 +118,12 @@ And here is how you apply an animation rule to a CSS class:
 
 (definitions from [W3Schools](https://www.w3schools.com/cssref/css3_pr_animation.asp))
 
+### Wait. What's a "speed curve"? What does "fill mode" mean?
+
+These two are a little bit more obscure and difficult to explain. Here's my best attempt:
+
+- A **speed curve** specifies the rate at which the paramaters change. [Here's an example site](http://easings.net/) with a bunch of speed curves. This is something you'll have to play around with -- check out the [W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp) for `animation-timing-function`.
+- The **fill mode** describes what happens to the animation after it's done running. Does it stay at the animation endpoint or does it go back to the beginning? If you set `animation-fill-mode` to `forwards`, the animation will stay in the `100%` state after it's finished. [See the W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp) for more information and examples.
 
 ### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100)!!
 
@@ -128,13 +134,6 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 | Keyframes Drawing                    | Description                                                                                                                                             | Expected property value                                                                                             |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | ![diagram](./assets/keyframes-2.jpg) | <ul><li>The circle does not move at any point.</li> <li>At first the circle is green</li> <li>Then it is purple.</li> <li>Finally, it is red.</li></ul> | <ol><li>`background-color: green;`</li> <li>`background-color: purple;`</li> <li>`background-color: red;`</li></ol> |
-
-### Wait. What's a "speed curve"? What does "fill mode" mean?
-
-These two are a little bit more obscure and difficult to explain. Here's my best attempt:
-
-- A **speed curve** specifies the rate at which the paramaters change. [Here's an example site](http://easings.net/) with a bunch of speed curves. This is something you'll have to play around with -- check out the [W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp) for `animation-timing-function`.
-- The **fill mode** describes what happens to the animation after it's done running. Does it stay at the animation endpoint or does it go back to the beginning? If you set `animation-fill-mode` to `forwards`, the animation will stay in the `100%` state after it's finished. [See the W3Schools page](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp) for more information and examples.
 
 # Lab 1
 

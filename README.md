@@ -147,4 +147,14 @@ These two are a little bit more obscure and difficult to explain. Here's my best
 
 # Lab 2
 
-- They try to add one or two planets to the solar system
+### This is a choose-your-own-adventure lab!!
+
+You can work on your own, in pairs, or in groups of three. Here are your options:
+
+- Add another planet or two to the solar system we've been building!!
+- Interested in how CSS animations can be used for microinteractions? I'll be doing a mini-lecture on that, based on a [dot wiggler](http://codepen.io/jlr7245/pen/zZemXE) I've been testing out.
+- Get another index card and test out your skills with the `transform` property!!!
+- Dig into one of the following examples & see if you can understand how they work. Any questions? Ask!
+    - [Day Night Simulation](http://codepen.io/Catagen/pen/PqYdXR/)
+    - [Flat design camera](http://codepen.io/damienpm/pen/esoJG/)
+    - [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz/?editors=1100)

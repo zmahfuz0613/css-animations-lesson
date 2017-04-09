@@ -192,3 +192,4 @@ You can work on your own, in pairs, or in groups of three. Here are your options
     - [Day Night Simulation](http://codepen.io/Catagen/pen/PqYdXR/)
     - [Flat design camera](http://codepen.io/damienpm/pen/esoJG/)
     - [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz/?editors=1100)
+    - [Rotating Box](http://codepen.io/jlr7245/pen/QpJjXz?editors=1100) (courtesy of one of my classmates from my cohort!!!!!!)

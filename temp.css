@@ -1,0 +1,21 @@
+.container {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 150px auto;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  height: 200px;
+  width: 400px;
+  box-sizing: border-box;
+  background-color: #674B7C;
+  padding: 15px;
+  color: white;
+}

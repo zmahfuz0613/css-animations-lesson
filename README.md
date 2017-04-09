@@ -153,6 +153,10 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 
 Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! While you'll still be rendering your result on a 2D canvas - your computer screen - you can still move your object around like it were a physical object. `transform` is just one property, but it has about 20 possible values. 
 
+A neat thing about transforms is that they affect not only the element they're applied to but also the element's children.
+
+### ✨ Let's see this in action! Follow along in [this codepen]()
+
 - we do together:
     - rotate a box with text in it first
     - rotate a box with a circle in it
@@ -161,16 +165,23 @@ Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! 
 
 ### 📚 Transform Demos
 
-There are four main types of transformations: rotate, skew, translate, and scale. These demos all use them in the context of animation, but you can also just use them on an element -- this is probably most common with rotate. (Want text a little bit slanted? That's `transform: rotate(10deg);`.)
+There are four main types of transformations: skew, rotate, translate, and scale. These demos all use them in the context of animation, but you can also just use them on an element -- this is probably most common with rotate. (Want text a little bit slanted? That's `transform: rotate(10deg);`.)
 
+- **Skew**: Defines a skew transformation -- i.e. changing a box into a parallelogram, etc.
+    - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/JWQQYX?editors=0100)
+    - Skew does not have a z-axis value.
 - **Rotate**: Rotates an element along the given axis. 
     - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/MpMdrP?editors=0100)
     - Bonus: Try uncommenting the `transform-style: preserve-3d;` line (ln 104 of the CSS) and see how that changes the rotations. Notice anything interesting?
     - Confession: the `rotate3d()` demo is mostly from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d) and apparently has something to do with cartesian coordinates, which are beyond me.
-- **Skew**: 
+- **Translate**: Moves an element to the left & right, or top & bottom, or alters its height from the z-plane.
+    - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/evwaNK?editors=0100)
+    - "Why not just animate left and right?" Translate actually has better performance, even at a small scale, since it doesn't have to talk to the rest of the elements on the page. It can also be used on any elements, even ones with `position: static;` that setting left and right on won't have any effect over.
+- **Scale**: Grows and shrinks an element along the x, y, or z axis.
+    - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/QpXXEz?editors=0100)
+    - `scaleZ(z)` is most frequently used with `translateZ(z)`. [Read here](https://tympanus.net/codrops/css_reference/scalez/) for more information.
 
-
-Some of these demos have been paired with an extra value, `perspective(num)`. You can read more about CSS perspective [here](https://css-tricks.com/almanac/properties/p/perspective/), and check out [this illustration](http://codepen.io/HugoGiraudel/pen/GLbca). Essentially, it describes how many pixels away from the z-plane the user is. (Sound confusing? Me too. Just play around with it and you'll figure it out.)
+Some of these demos have been paired with an extra value, `perspective(n)`. You can read more about CSS perspective [here](https://css-tricks.com/almanac/properties/p/perspective/), and check out [this illustration](http://codepen.io/HugoGiraudel/pen/GLbca). Essentially, it describes how many pixels away from the z-plane the user is. (Sound confusing? Me too. Just play around with it and you'll figure it out.)
 
 > Sidenote: Usually when writing CSS animations, you'll see -webkit- and -moz- prefixes. Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. Not sure if you need a prefix? Go to Can I Use and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
 

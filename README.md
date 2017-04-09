@@ -151,6 +151,17 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 
 ## Transforms
 
+The `transform` property applies a 2D or 3D transformation to an element. It's what allows for rotation, scaling, skewing, and more within CSS animations. `transform` is just one property, but it has about 20 possible values. I'm going to go over some of the most common, and I recommend digging in on your own sometime.
+
+Some of these demos have been paired with an extra value, `perspective(num)`. Perspective in CSS animation is tricky and a little obtuse. I'm not an expert on it and its best uses. If it's something you're interested in really exploring, I encourage you to mess around and try it out!
+
+#### I've been using transformations here in the context of animation, since that's what we're talking about and they are often used in animation. However, they aren't only applicable to animation contexts. Want a div to be a little tilted? Use a transform.
+
+- **Rotate**: Rotates an element along the given axis. [✨ Example codepen](http://codepen.io/jlr7245/pen/MpMdrP?editors=0100)
+    - Bonus: Try uncommenting the `transform-style: preserve-3d;` line and see how that changes the rotations. Notice anything interesting?
+    - Note: the `rotate3d()` demo is mostly from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d) and apparently has something to do with cartesian coordinates, which are beyond me.
+- **Skew**: 
+
 - Go over the different families of transform properties
     - translate
     - scale

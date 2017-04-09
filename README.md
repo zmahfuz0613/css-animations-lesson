@@ -155,13 +155,7 @@ Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! 
 
 A neat thing about transforms is that they affect not only the element they're applied to but also the element's children.
 
-### ✨ Let's see this in action! Follow along in [this codepen]()
-
-- we do together:
-    - rotate a box with text in it first
-    - rotate a box with a circle in it
-    - rotate multiple boxes
-    - hey look, we built a solar system
+### ✨ Let's see this in action! Follow along in [this codepen](http://codepen.io/jlr7245/pen/dvBBjZ?editors=0100)
 
 ### 📚 Transform Demos
 
@@ -183,7 +177,7 @@ There are four main types of transformations: skew, rotate, translate, and scale
 
 Some of these demos have been paired with an extra value, `perspective(n)`. You can read more about CSS perspective [here](https://css-tricks.com/almanac/properties/p/perspective/), and check out [this illustration](http://codepen.io/HugoGiraudel/pen/GLbca). Essentially, it describes how many pixels away from the z-plane the user is. (Sound confusing? Me too. Just play around with it and you'll figure it out.)
 
-> Sidenote: Usually when writing CSS animations, you'll see -webkit- and -moz- prefixes. Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. Not sure if you need a prefix? Go to Can I Use and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
+> Sidenote: Usually when writing CSS animations, you'll see `-webkit-` and `-moz-` prefixes. Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(`-webkit-`), Firefox(`-moz-`), IE(`-ms-`), and Opera(`-o-`) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. Not sure if you need a prefix? Go to Can I Use and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
 
 # 💥 Lab 2
 

@@ -127,9 +127,7 @@ These two are a little bit more obscure and difficult to explain. Here's my best
 
 ### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/yMdZLv?editors=1100)!!
 
-We'll animate this drawing together. I've done some pseudocoding beforehand, which may feel a little bit like overkill. 
-
-But, like I was saying on Friday when we were talking about Rock Paper Scissors, it's good practice to get used to thinking about small problems in this way. Breaking up large problems into small pieces will be easier down the line.
+We'll animate this drawing together. I've done some pseudocoding beforehand, which may feel a little bit like overkill. But, like I was saying on Friday when we were talking about Rock Paper Scissors, it's good practice to get used to thinking about small problems in this way. Breaking up large problems into small pieces will be easier down the line.
 
 | Keyframes Drawing                    | Description                                                                                                                                             | Expected property value                                                                                             |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -167,6 +165,7 @@ There are four main types of transformations: skew, rotate, translate, and scale
 - **Rotate**: Rotates an element along the given axis. 
     - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/MpMdrP?editors=0100)
     - Bonus: Try uncommenting the `transform-style: preserve-3d;` line (ln 104 of the CSS) and see how that changes the rotations. Notice anything interesting?
+    - Bonus 2: The [backface visibility](https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp) property helps with rotations, if you don't want to be able to see the text backward through the rotated element's backface. [Here are some examples.](https://designmodo.com/backface-visibility-css-animation/)
     - Confession: the `rotate3d()` demo is mostly from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d) and apparently has something to do with cartesian coordinates, which are beyond me.
 - **Translate**: Moves an element to the left & right, or top & bottom, or alters its height from the z-plane.
     - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/evwaNK?editors=0100)
@@ -186,7 +185,7 @@ Some of these demos have been paired with an extra value, `perspective(n)`. You 
 You can work on your own, in pairs, or in groups of three. Here are your options:
 
 - Add another planet or two to the solar system we've been building!!
-- Interested in how CSS animations can be used for microinteractions? I'll be doing a mini-lecture on that, based on a [dot wiggler](http://codepen.io/jlr7245/pen/zZemXE) I've been testing out. (I'll also walk through the DOM stuff that makes the gameboard generate randomly.)
+- Interested in how CSS animations can be used for microinteractions? I'll be doing a mini-lecture on that, based on a [dot wiggler](http://codepen.io/jlr7245/pen/zZemXE) I've been testing out.
 - Get another index card and test out your skills with the `transform` property!!!
 - Dig into one of the following examples & see if you can understand how it works. Any questions? Ask!
     - [Day Night Simulation](http://codepen.io/Catagen/pen/PqYdXR/)

@@ -151,30 +151,28 @@ But, like I was saying on Friday when we were talking about Rock Paper Scissors,
 
 ## Transforms
 
-The `transform` property applies a 2D or 3D transformation to an element. It's what allows for rotation, scaling, skewing, and more within CSS animations. `transform` is just one property, but it has about 20 possible values. 
-
-Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! While you'll still be rendering your result on a 2D canvas - your computer screen - you can still move your object around like it were a physical object.
-
-### Transform Demos
-
-There are four main types of transformations: rotate, skew, translate, and scale. 
-
-- **Rotate**: Rotates an element along the given axis. [✨ Example codepen ✨](http://codepen.io/jlr7245/pen/MpMdrP?editors=0100)
-    - Bonus: Try uncommenting the `transform-style: preserve-3d;` line (ln 104 of the CSS) and see how that changes the rotations. Notice anything interesting?
-    - Note: the `rotate3d()` demo is mostly from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d) and apparently has something to do with cartesian coordinates, which are beyond me.
-- **Skew**: 
-
-
-Some of these demos have been paired with an extra value, `perspective(num)`. Perspective in CSS animation is tricky and a little obtuse. I'm not an expert on it and its best uses. If it's something you're interested in really exploring, I encourage you to mess around and try it out!
-
-> Sidenote: Usually when writing CSS animations, you'll see -webkit- and -moz- prefixes. Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. Not sure if you need a prefix? Go to Can I Use and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
-
+Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! While you'll still be rendering your result on a 2D canvas - your computer screen - you can still move your object around like it were a physical object. `transform` is just one property, but it has about 20 possible values. 
 
 - we do together:
     - rotate a box with text in it first
     - rotate a box with a circle in it
     - rotate multiple boxes
     - hey look, we built a solar system
+
+### 📚 Transform Demos
+
+There are four main types of transformations: rotate, skew, translate, and scale. These demos all use them in the context of animation, but you can also just use them on an element -- this is probably most common with rotate. (Want text a little bit slanted? That's `transform: rotate(10deg);`.)
+
+- **Rotate**: Rotates an element along the given axis. 
+    - [✨ **Example codepen** ✨](http://codepen.io/jlr7245/pen/MpMdrP?editors=0100)
+    - Bonus: Try uncommenting the `transform-style: preserve-3d;` line (ln 104 of the CSS) and see how that changes the rotations. Notice anything interesting?
+    - Confession: the `rotate3d()` demo is mostly from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d) and apparently has something to do with cartesian coordinates, which are beyond me.
+- **Skew**: 
+
+
+Some of these demos have been paired with an extra value, `perspective(num)`. You can read more about CSS perspective [here](https://css-tricks.com/almanac/properties/p/perspective/), and check out [this illustration](http://codepen.io/HugoGiraudel/pen/GLbca). Essentially, it describes how many pixels away from the z-plane the user is. (Sound confusing? Me too. Just play around with it and you'll figure it out.)
+
+> Sidenote: Usually when writing CSS animations, you'll see -webkit- and -moz- prefixes. Those are called vendor prefixes. Some of the animations we're doing are so cutting edge, that they haven't been formally adopted by all browsers. In cases like this, you'll have to call the same value multiple times with vendor-specific prefixes to make sure that Chrome(webkit), Firefox(moz), IE(ms), and Opera(O) all display the animation correctly. Always leave a non-prefixed call in as well - as these properties are formally adopted, the need for the vendor prefix will dissapear, as will its support. Not sure if you need a prefix? Go to Can I Use and search for the CSS property you want to use - you'll receieve a detailed breakdown of what browsers support it.
 
 # 💥 Lab 2
 

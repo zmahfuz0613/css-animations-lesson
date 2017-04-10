@@ -155,6 +155,10 @@ A neat thing about transforms is that they affect not only the element they're a
 
 ### ✨ Let's see this in action! Follow along in [this codepen](http://codepen.io/jlr7245/pen/dvBBjZ?editors=0100)
 
+We'll be working from this diagram:
+
+![orbital](./assets/orbital.jpg)
+
 ### 📚 Transform Demos
 
 There are four main types of transformations: skew, rotate, translate, and scale. These demos all use them in the context of animation, but you can also just use them on an element -- this is probably most common with rotate. (Want text a little bit slanted? That's `transform: rotate(10deg);`.)

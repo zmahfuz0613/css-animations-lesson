@@ -1,0 +1,100 @@
+body {
+  counter-reset: section;
+}
+section{
+  background-color: #222;
+}
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 200px;
+  width: 200px;
+  margin: 6px;
+  display: flex;
+  background-color: #fff;
+  align-self: center;
+}
+
+.cell:not(.solution) {
+
+  background-color: #ddd;
+}
+
+.row:before {
+  font-size: 200px;
+  line-height: 200px;
+  text-align: right;
+  width: 1em;
+  font-weight: 400;
+  margin-right: 10px;
+  counter-increment: section;                 /* Increment the value of section counter by 1 */
+  content: counter(section);
+}
+
+.row:hover {
+  background-color: #333;
+}
+
+.row:hover:before {
+  color: #aaa;
+}
+
+.obj {
+  height: 60px;
+  width: 60px;
+  background-color: #bbb;
+}
+
+.solution {
+  margin-left: 10em;
+}
+
+
+/* four cells in a row */
+.has-4 .cell:not(.solution) .obj{
+  height: 40px;
+  width: 40px;
+}
+
+.has-4 .cell:not(.solution) {
+  height: 150px;
+  width: 150px;
+  margin-right: 2px;
+}
+
+.has-4 .cell:nth-child(4) {
+  margin-right: 6px;
+}
+
+/* two cells in a row */
+.has-2 .cell:not(.solution) .obj{
+  height: 80px;
+  width: 80px;
+}
+
+.has-2 .cell:not(.solution) {
+  height: 300px;
+  width: 300px;
+  margin-right: 16px;
+}
+
+.has-2 .cell:nth-child(2) {
+  margin-right: 8px;
+}
+
+
+/* six cells in a row */
+
+.has-6 .cell:not(.solution) {
+  height: 200px;
+  width: 85px;
+  margin: 4px;
+  margin-right: 1px;
+}
+
+.has-6 .cell:nth-child(7) {
+  margin-right: 6px;
+}
+

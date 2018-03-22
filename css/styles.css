@@ -1,0 +1,381 @@
+
+
+/* DEMO 1*/
+#basic-slide .cell:nth-child(2) {
+  justify-content: center;
+}
+
+#basic-slide .cell:nth-child(3) {
+  justify-content: flex-end;
+}
+
+#basic-slide:hover .solution .obj{
+  /* put an animation here*/
+}
+
+
+/**
+ * keyframe animation here
+ */
+@keyframes slide-over {
+  /*demo 1*/
+}
+
+
+/* DEMO 2 */
+#box-rotate-to-ball .cell:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+#box-rotate-to-ball .cell:nth-child(2) .obj{
+  background-color: green;
+  border-radius: 25%;
+  transform: rotate(45deg);
+}
+
+
+#box-rotate-to-ball .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#box-rotate-to-ball .cell:nth-child(3) .obj{
+  background-color: green;
+  border-radius: 50%;
+}
+
+#box-rotate-to-ball:hover .solution .obj{
+  /* animation here */
+}
+
+
+/**
+ * keyframe animation here
+ */
+
+@keyframes demo2 {
+  /* animation here */
+}
+
+
+
+/* DEMO 3 */
+
+#counter-clock-ball .obj{
+  border-radius: 50%;
+}
+
+#counter-clock-ball .cell:nth-child(1) .obj {
+  background-color: red;
+}
+
+#counter-clock-ball .cell:nth-child(2) {
+  align-items: flex-end;
+}
+
+#counter-clock-ball .cell:nth-child(2) .obj{
+  background-color: #FD0;
+}
+
+#counter-clock-ball .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#counter-clock-ball .cell:nth-child(3) .obj{
+  background-color: green;
+}
+
+#counter-clock-ball .cell:nth-child(4) {
+  justify-content: flex-end;
+}
+
+#counter-clock-ball .cell:nth-child(4) .obj{
+  justify-content: flex-end;
+  background-color: blue;
+}
+
+#counter-clock-ball:hover .solution .obj{
+  /* put the animation here */
+}
+
+
+/**
+ * keyframe animation here
+ */
+
+@keyframes demo3 {
+  /* animation here */
+}
+
+
+/* DEMO 4 */
+
+#face-roll .obj:after{
+  content: "😀";
+  font-size: 3em;
+}
+#face-roll .cell:nth-child(1) .obj {
+  background-color: red;
+}
+
+#face-roll .cell:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+#face-roll .cell:nth-child(2) .obj{
+  transform: rotate(90deg);
+  background-color: blue;
+}
+
+#face-roll .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#face-roll .cell:nth-child(3) .obj{
+  background-color: green;
+  transform: rotate(180deg);
+}
+
+
+#face-roll:hover .solution .obj{
+  /* animation */
+}
+
+/**
+ * keyframe animation here
+ */
+@keyframes demo4 {
+  /* what's this thing do? */
+}
+
+
+
+/* DEMO 5 */
+
+#grow-slide-shrink .cell .obj {
+  background-color: lightblue;
+}
+
+#grow-slide-shrink .cell:nth-child(2) .obj {
+  width: 200px;
+  height: 200px;
+  background-color: darkblue;
+}
+
+#grow-slide-shrink .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#grow-slide-shrink .cell:nth-child(3) .obj {
+  background-color: darkblue;
+}
+
+#grow-slide-shrink:hover .solution .obj {
+  /* make me do a thing */
+}
+
+/**
+ * keyframe animation here
+ */
+@keyframes grow-shrink {
+  /* animation */
+}
+
+
+/* DEMO 8 */
+#raised-button .cell {
+  justify-content: center;
+  align-items: center;
+}
+
+
+#raised-button .cell .obj {
+  background-color: lightblue;
+  filter: drop-shadow(3px 3px 2px #aaa);
+  position: relative;
+  border-radius: 50%;
+}
+
+
+#raised-button .solution.cell .obj:hover,
+#raised-button .cell:nth-child(2) .obj {
+  /* to give the illusion of a button reaction,
+  move the button over by 1px;
+  change the color
+  */
+}
+
+
+/* Loading 1 */
+#loading1 .cell {
+  justify-content: center;
+  align-items: center;
+}
+
+#loading1 .cell .obj {
+  background-color: lightblue;
+}
+
+#loading1 .cell:nth-child(2) {
+  background-image: url('../assets/loading1b.png') ;
+  background-size: 200px;
+}
+#loading1 .cell:nth-child(3) {
+  background-image: url('../assets/loading1a.png') ;
+  background-size: 200px;
+}
+
+#loading1 .cell:nth-child(1) {
+  background-image: url('../assets/loading1c.png') ;
+  background-size: 200px;
+}
+
+#loading1:hover .solution .obj {
+  width: 10px;
+  margin-right: 2px;
+  /* animate me; your transition should ease in and out */
+}
+
+/* hint: animate each item on a 0.2 second delay to create a wave */
+
+/**
+ * keyframe animation here
+ */
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    /* Scale only the Y-coordinate a little */
+  }  20% {
+    /* Scale only the Y-coordinate a lot */
+  }
+}
+
+
+/* Loading 2*/
+#loading2 .cell {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#loading2 .cell .obj {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+#loading2:hover .solution .obj {
+  animation: myOrbit 1.3s infinite linear;
+}
+
+#loading2 .cell:nth-child(1) {
+  background-image: url('../assets/loading2a.png') ;
+  background-size: 200px;
+}
+#loading2 .cell:nth-child(2) {
+  background-image: url('../assets/loading2b.png') ;
+  background-size: 200px;
+}
+#loading2 .cell:nth-child(3) {
+  background-image: url('../assets/loading2c.png') ;
+  background-size: 200px;
+}
+
+
+#loading2 .solution .obj:nth-child(1) {
+  animation-delay: -1.2s;
+}
+
+#loading2 .solution .obj:nth-child(2) {
+  /* animate on a delay of -0.2s */
+}
+
+#loading2 .solution .obj:nth-child(3) {
+  /* animate on a delay of -0.2s */
+}
+
+#loading2 .solution .obj:nth-child(4) {
+  /* animate on a delay of -0.2s */
+}
+
+#loading2 .solution .obj:nth-child(5) {
+  /* animate on a delay of -0.2s */
+}
+
+/**
+ * keyframe animation here
+ */
+@keyframes myOrbit {
+  /* you'll need 3 keyframes here:
+     establish a 30px radius and rotate around.
+   */
+
+}
+
+/*@see https://stackoverflow.com/questions/19165364/cycling-animation-of-rainbow-coloured-text*/
+/* @see http://colrd.com/palette/23813/?download=css */
+
+#rainbow-cycle .cell {
+  justify-content: center;
+  align-items: center;
+}
+#rainbow-cycle .cell .obj{
+  height: 100%;
+  width: 100%;
+}
+
+/* RED */
+#rainbow-cycle .cell:nth-child(1) .obj {
+  background-color: rgb(209, 0, 0);
+}
+
+/* ORANGE */
+#rainbow-cycle .cell:nth-child(2) .obj {
+  background-color: rgb(255, 102, 34);
+}
+
+/* YELLOW */
+#rainbow-cycle .cell:nth-child(3) .obj {
+  background-color: rgb(255, 218, 33);
+}
+
+/* GREEN */
+#rainbow-cycle .cell:nth-child(4) .obj {
+  background-color: rgb(51, 221, 0);
+}
+
+/* BLUE */
+#rainbow-cycle .cell:nth-child(5) .obj {
+  background-color: rgb(17, 51, 204);
+}
+
+/* INDIGO */
+#rainbow-cycle .cell:nth-child(6) .obj {
+  background-color: rgb(34, 0, 102);
+}
+
+/* VIOLET */
+#rainbow-cycle .cell:nth-child(7) .obj {
+  background-color: rgb(51, 0, 68);
+}
+
+#rainbow-cycle:hover .solution .obj {
+  /* we need an infinite eased transformation here of 3.2 seconds */
+}
+
+@keyframes colorRotate {
+  /*
+    We're cycling through the spectrum:
+    - red, orange, yellow, green, blue, indigo, violet (ROYGBIV);
+    - you'll need 8 keyframes here,
+    - RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET, RED
+    - animate each in 14.2% increments
+
+  */
+}

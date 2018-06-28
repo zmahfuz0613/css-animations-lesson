@@ -1,6 +1,14 @@
 
-
 /* DEMO 1*/
+/**
+ * keyframe animation gets a name here
+ */
+@keyframes jabberwocky {
+  /* describe keyframes here*/
+
+}
+
+
 #basic-slide .cell:nth-child(2) {
   justify-content: center;
 }
@@ -10,19 +18,22 @@
 }
 
 #basic-slide:hover .solution .obj{
-  /* put an animation here*/
+  /* put animation here, using the keyframe name */
 }
 
 
-/**
- * keyframe animation here
- */
-@keyframes slide-over {
-  /*demo 1*/
-}
 
 
 /* DEMO 2 */
+/**
+ * keyframe animation here
+ */
+
+@keyframes poopsy {
+  /* animation here */
+
+}
+
 #box-rotate-to-ball .cell:nth-child(2) {
   justify-content: center;
   align-items: center;
@@ -49,18 +60,100 @@
   /* animation here */
 }
 
+/**
+ * EMOJI ROLL
+ */
 
 /**
  * keyframe animation here
  */
+@keyframes emoji-roller {
+  /* what's this thing do? */
+}
 
-@keyframes demo2 {
-  /* animation here */
+
+#face-roll .obj:after{
+  content: "😀";
+  font-size: 3em;
+}
+#face-roll .cell:nth-child(1) .obj {
+  background-color: red;
+}
+
+#face-roll .cell:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+#face-roll .cell:nth-child(2) .obj{
+  transform: rotate(90deg);
+  background-color: blue;
+}
+
+#face-roll .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#face-roll .cell:nth-child(3) .obj{
+  background-color: green;
+  transform: rotate(180deg);
+}
+
+
+#face-roll:hover .solution .obj{
+  /* animation */
+}
+
+
+/**
+ * grow-slide-shrink
+ */
+
+/**
+ * keyframe animation here
+ */
+@keyframes grow-shrink {
+  /* animation */
+
 }
 
 
 
-/* DEMO 3 */
+#grow-slide-shrink .cell .obj {
+  background-color: lightblue;
+}
+
+#grow-slide-shrink .cell:nth-child(2) .obj {
+  width: 200px;
+  height: 200px;
+  background-color: darkblue;
+}
+
+#grow-slide-shrink .cell:nth-child(3) {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#grow-slide-shrink .cell:nth-child(3) .obj {
+  background-color: darkblue;
+}
+
+#grow-slide-shrink:hover .solution .obj {
+  /* make me do a thing */
+}
+
+
+/**
+ * RAINBOW BALL
+ */
+
+/**
+ * describe keyframe animation here
+ */
+
+@keyframes rainbow-ball {
+  /* animation here */
+}
 
 #counter-clock-ball .obj{
   border-radius: 50%;
@@ -101,88 +194,108 @@
 
 
 /**
- * keyframe animation here
+ * RAINBOW CYCLE
  */
 
-@keyframes demo3 {
-  /* animation here */
+/*@see https://stackoverflow.com/questions/19165364/cycling-animation-of-rainbow-coloured-text*/
+/* @see http://colrd.com/palette/23813/?download=css */
+
+
+@keyframes colorRotate {
+  /*
+    We're cycling through the spectrum:
+    - red, orange, yellow, green, blue, indigo, violet (ROYGBIV);
+    - you'll need 8 keyframes here,
+    - RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET, RED (SEE COLORS BELOW)
+    - animate each in 14.2% increments
+
+  */
+
 }
 
 
-/* DEMO 4 */
 
-#face-roll .obj:after{
-  content: "😀";
-  font-size: 3em;
-}
-#face-roll .cell:nth-child(1) .obj {
-  background-color: red;
-}
 
-#face-roll .cell:nth-child(2) {
+#rainbow-cycle .cell {
   justify-content: center;
   align-items: center;
 }
-
-#face-roll .cell:nth-child(2) .obj{
-  transform: rotate(90deg);
-  background-color: blue;
+#rainbow-cycle .cell .obj{
+  height: 100%;
+  width: 100%;
 }
 
-#face-roll .cell:nth-child(3) {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#face-roll .cell:nth-child(3) .obj{
-  background-color: green;
-  transform: rotate(180deg);
+/* RED */
+#rainbow-cycle .cell:nth-child(1) .obj {
+  background-color: rgb(209, 0, 0);
 }
 
-
-#face-roll:hover .solution .obj{
-  /* animation */
+/* ORANGE */
+#rainbow-cycle .cell:nth-child(2) .obj {
+  background-color: rgb(255, 102, 34);
 }
 
-/**
- * keyframe animation here
- */
-@keyframes demo4 {
-  /* what's this thing do? */
+/* YELLOW */
+#rainbow-cycle .cell:nth-child(3) .obj {
+  background-color: rgb(255, 218, 33);
+}
+
+/* GREEN */
+#rainbow-cycle .cell:nth-child(4) .obj {
+  background-color: rgb(51, 221, 0);
+}
+
+/* BLUE */
+#rainbow-cycle .cell:nth-child(5) .obj {
+  background-color: rgb(17, 51, 204);
+}
+
+/* INDIGO */
+#rainbow-cycle .cell:nth-child(6) .obj {
+  background-color: rgb(34, 0, 102);
+}
+
+/* VIOLET */
+#rainbow-cycle .cell:nth-child(7) .obj {
+  background-color: rgb(51, 0, 68);
+}
+
+#rainbow-cycle:hover .solution .obj {
+  /* we need an infinite eased transformation here of 3.2 seconds */
 }
 
 
-
-/* DEMO 5 */
-
-#grow-slide-shrink .cell .obj {
-  background-color: lightblue;
+#swivel .obj {
+  width:200px;
+  height:200px;
+  border: 1px solid white;
 }
 
-#grow-slide-shrink .cell:nth-child(2) .obj {
-  width: 200px;
-  height: 200px;
-  background-color: darkblue;
+
+#swivel .cell {
+  transform-origin: 0 0;
+  perspective: 40em;
+  background-color: #fff;
 }
 
-#grow-slide-shrink .cell:nth-child(3) {
-  justify-content: flex-end;
-  align-items: flex-end;
+#swivel .cell:nth-child(1) .obj {
+  transform-origin: 0 0;
+  transform: rotateY(-90deg);
 }
 
-#grow-slide-shrink .cell:nth-child(3) .obj {
-  background-color: darkblue;
+#swivel .cell:nth-child(3) .obj {
+  transform-origin: 0 0;
+  transform: rotateY(90deg);
 }
 
-#grow-slide-shrink:hover .solution .obj {
-  /* make me do a thing */
+
+#swivel:hover .solution .obj {
 }
 
-/**
- * keyframe animation here
- */
-@keyframes grow-shrink {
-  /* animation */
+@keyframes swivel {
+
 }
+
 
 
 /* DEMO 8 */
@@ -239,7 +352,28 @@
   /* animate me; your transition should ease in and out */
 }
 
-/* hint: animate each item on a 0.2 second delay to create a wave */
+/* hint: animate each item on a 0.1 second delay to create a wave */
+
+#loading1 .solution .obj:nth-child(1) {
+  animation-delay: -1.1s;
+}
+
+#loading1 .solution .obj:nth-child(2) {
+  /* animate on a delay of -0.1s */
+}
+
+#loading1 .solution .obj:nth-child(3) {
+  /* animate on a delay of -0.1s */
+}
+
+#loading1 .solution .obj:nth-child(4) {
+  /* animate on a delay of -0.1s */
+}
+
+#loading1 .solution .obj:nth-child(5) {
+  /* animate on a delay of -0.1s */
+}
+
 
 /**
  * keyframe animation here
@@ -318,64 +452,4 @@
 
 }
 
-/*@see https://stackoverflow.com/questions/19165364/cycling-animation-of-rainbow-coloured-text*/
-/* @see http://colrd.com/palette/23813/?download=css */
 
-#rainbow-cycle .cell {
-  justify-content: center;
-  align-items: center;
-}
-#rainbow-cycle .cell .obj{
-  height: 100%;
-  width: 100%;
-}
-
-/* RED */
-#rainbow-cycle .cell:nth-child(1) .obj {
-  background-color: rgb(209, 0, 0);
-}
-
-/* ORANGE */
-#rainbow-cycle .cell:nth-child(2) .obj {
-  background-color: rgb(255, 102, 34);
-}
-
-/* YELLOW */
-#rainbow-cycle .cell:nth-child(3) .obj {
-  background-color: rgb(255, 218, 33);
-}
-
-/* GREEN */
-#rainbow-cycle .cell:nth-child(4) .obj {
-  background-color: rgb(51, 221, 0);
-}
-
-/* BLUE */
-#rainbow-cycle .cell:nth-child(5) .obj {
-  background-color: rgb(17, 51, 204);
-}
-
-/* INDIGO */
-#rainbow-cycle .cell:nth-child(6) .obj {
-  background-color: rgb(34, 0, 102);
-}
-
-/* VIOLET */
-#rainbow-cycle .cell:nth-child(7) .obj {
-  background-color: rgb(51, 0, 68);
-}
-
-#rainbow-cycle:hover .solution .obj {
-  /* we need an infinite eased transformation here of 3.2 seconds */
-}
-
-@keyframes colorRotate {
-  /*
-    We're cycling through the spectrum:
-    - red, orange, yellow, green, blue, indigo, violet (ROYGBIV);
-    - you'll need 8 keyframes here,
-    - RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET, RED
-    - animate each in 14.2% increments
-
-  */
-}

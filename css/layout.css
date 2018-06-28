@@ -88,7 +88,7 @@ section{
 /* six cells in a row */
 
 .has-6 .cell:not(.solution) {
-  height: 200px;
+  height: 85px;
   width: 85px;
   margin: 4px;
   margin-right: 1px;

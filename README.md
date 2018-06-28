@@ -1,17 +1,17 @@
-# CSS ANIMATIONS!!!!!
+# CSS3 ANIMATIONS
 
-You know a little bit how to move stuff around with JavaScript.... now let's learn how to make it move around with CSS!!!
+You know a little bit how to move stuff around with JavaScript.... now let's learn how to make it move around with CSS.
 
 ### Learning Objectives
 
-- Understand how traditional hand-drawn keyframe animation and CSS animation relate
+- Compare traditional hand-drawn keyframe animation and CSS animations
 - Use the `animation` property to animate elements
 - Use the `transform` property to change elements
-- Recognize the different values for the `transform` property and see what they do
+- Implement different values for the `transform` property to describe their effect
 - Recognize the parts of keyframe syntax
-- Analyze a description of an animation and understand at a high level what steps would be needed to reproduce it
+- Deconstruct the description of an animation to assemble proper CSS syntax
 
-## Transitions Redux
+## Transitions 
 
 **Transitions** let us tell the browser how to change a property over time. You'll commonly see the `transition` property used on `:hover` and `:focus` states, as we talked about last week.
 
@@ -195,4 +195,4 @@ You can work on your own, in pairs, or in groups of three. Here are your options
     - [Day Night Simulation](http://codepen.io/Catagen/pen/PqYdXR/)
     - [Flat design camera](http://codepen.io/damienpm/pen/esoJG/)
     - [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz/?editors=1100)
-    - [Rotating Box](http://codepen.io/jlr7245/pen/QpJjXz?editors=1100) (courtesy of one of my classmates from my cohort!!!!!!)
+    - [Rotating Box](http://codepen.io/jlr7245/pen/QpJjXz?editors=1100) (courtesy of a student)

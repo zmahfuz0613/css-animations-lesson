@@ -5,7 +5,9 @@
  */
 @keyframes jabberwocky {
   /* describe keyframes here*/
-
+  100% {
+    transform: translate(140px,0);
+  }
 }
 
 
@@ -19,6 +21,7 @@
 
 #basic-slide:hover .solution .obj{
   /* put animation here, using the keyframe name */
+  animation: jabberwocky 3s 3 forwards;
 }
 
 
@@ -31,7 +34,11 @@
 
 @keyframes poopsy {
   /* animation here */
-
+  to {
+    transform: translate(140px,140px) rotate(90deg);
+    background-color: green;
+    border-radius: 50%;
+  }
 }
 
 #box-rotate-to-ball .cell:nth-child(2) {
@@ -58,6 +65,7 @@
 
 #box-rotate-to-ball:hover .solution .obj{
   /* animation here */
+   animation: poopsy 3s 3 forwards;
 }
 
 /**
@@ -69,6 +77,15 @@
  */
 @keyframes emoji-roller {
   /* what's this thing do? */
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    transform: translate(140px,140px) rotate(180deg);
+    background-color: green;
+  }
+
 }
 
 
@@ -102,6 +119,9 @@
 
 #face-roll:hover .solution .obj{
   /* animation */
+  animation: emoji-roller 1s 3 forwards;
+  background-color: red;
+
 }
 
 
@@ -114,7 +134,16 @@
  */
 @keyframes grow-shrink {
   /* animation */
-
+  50% {
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(140px, 140px);
+    background-color: darkblue;
+  }
 }
 
 
@@ -140,6 +169,7 @@
 
 #grow-slide-shrink:hover .solution .obj {
   /* make me do a thing */
+  animation: grow-shrink 1s 3 forwards;
 }
 
 
@@ -153,6 +183,22 @@
 
 @keyframes rainbow-ball {
   /* animation here */
+  from, to {
+    transform: translate(0,0);
+    background-color: red;
+  }
+  25% {
+    transform: translate(0,140px);
+    background-color: #FD0;
+  }
+  50% {
+    transform: translate(140px,140px);
+    background-color: green;
+  }
+  75% {
+    transform: translate(140px, 0);
+    background-color: blue;
+  }
 }
 
 #counter-clock-ball .obj{
@@ -190,6 +236,8 @@
 
 #counter-clock-ball:hover .solution .obj{
   /* put the animation here */
+  animation: rainbow-ball 3s 3 forwards;
+  background-color: red;
 }
 
 
@@ -210,6 +258,28 @@
     - animate each in 14.2% increments
 
   */
+
+  from, to {
+      background-color: rgb(209, 0, 0);
+  }
+  14.2% {
+      background-color: rgb(255, 102, 34);
+  }
+  28.4% {
+      background-color: rgb(255, 218, 33);
+  }
+  42.6% {
+      background-color: rgb(51, 221, 0);
+  }
+  56.8% {
+      background-color: rgb(17, 51, 204);
+  }
+  71% {
+    background-color: rgb(34, 0, 102);
+  }
+  85.2% {
+    background-color:rgb(51, 0, 68);
+  }
 
 }
 
@@ -262,6 +332,8 @@
 
 #rainbow-cycle:hover .solution .obj {
   /* we need an infinite eased transformation here of 3.2 seconds */
+  animation: colorRotate 3.2s infinite ease-in;
+
 }
 
 
@@ -290,10 +362,17 @@
 
 
 #swivel:hover .solution .obj {
+  transform-origin: 0 0;
+  animation: swivel 2s infinite ease-in-out alternate;
 }
 
 @keyframes swivel {
-
+  from {
+    transform: rotateY(-90deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
 }
 
 
@@ -319,6 +398,11 @@
   move the button over by 1px;
   change the color
   */
+  top: -1px;
+  left: -1px;
+  filter: drop-shadow(4px 4px 2px #aaa);
+  transition: position 1s, background-color 0.25s, filter;
+  background-color: darkblue;
 }
 
 
@@ -350,6 +434,8 @@
   width: 10px;
   margin-right: 2px;
   /* animate me; your transition should ease in and out */
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+
 }
 
 /* hint: animate each item on a 0.1 second delay to create a wave */
@@ -360,18 +446,22 @@
 
 #loading1 .solution .obj:nth-child(2) {
   /* animate on a delay of -0.1s */
+  animation-delay: -1.0s;
 }
 
 #loading1 .solution .obj:nth-child(3) {
   /* animate on a delay of -0.1s */
+  animation-delay: -0.9s;
 }
 
 #loading1 .solution .obj:nth-child(4) {
   /* animate on a delay of -0.1s */
+  animation-delay: -0.8s;
 }
 
 #loading1 .solution .obj:nth-child(5) {
   /* animate on a delay of -0.1s */
+  animation-delay: -0.7s;
 }
 
 
@@ -382,8 +472,10 @@
 @keyframes sk-stretchdelay {
   0%, 40%, 100% {
     /* Scale only the Y-coordinate a little */
+    transform: scaleY(0.4);
   }  20% {
     /* Scale only the Y-coordinate a lot */
+    transform: scaleY(1.2);
   }
 }
 
@@ -428,18 +520,22 @@
 
 #loading2 .solution .obj:nth-child(2) {
   /* animate on a delay of -0.2s */
+  animation-delay: -1.0s;
 }
 
 #loading2 .solution .obj:nth-child(3) {
   /* animate on a delay of -0.2s */
+  animation-delay: -0.8s;
 }
 
 #loading2 .solution .obj:nth-child(4) {
   /* animate on a delay of -0.2s */
+  animation-delay: -0.6s;
 }
 
 #loading2 .solution .obj:nth-child(5) {
   /* animate on a delay of -0.2s */
+  animation-delay: -0.4s;
 }
 
 /**
@@ -450,6 +546,24 @@
      establish a 30px radius and rotate around.
    */
 
+  from {
+    transform: rotate(0deg) translateX(20px);
+    height: 3px;
+    width: 3px;
+  }
+
+
+  30% {
+    transform: rotate(180deg) translateX(30px) ;
+    background-color: lightblue;
+    height: 20px;
+    width: 20px;
+  }
+  to {
+    transform: rotate(360deg) translateX(20px);
+    height: 3px;
+    width: 3px;
+  }
 }
 
 

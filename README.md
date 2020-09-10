@@ -13,7 +13,7 @@ You know a little bit how to move stuff around with JavaScript.... now let's lea
 
 ## Transitions 
 
-**Transitions** let us tell the browser how to change a property over time. You'll commonly see the `transition` property used on `:hover` and `:focus` states, as we talked about last week.
+**Transitions** let us tell the browser how to change a property over time. You'll commonly see the `transition` property used on `:hover` and `:focus` states.
 
 However, with `:hover` and `:focus`, we were mostly changing things like background color, font color, etc. Transition can be used with many more properties.
 
@@ -118,16 +118,13 @@ And here is how you apply an animation rule to a CSS class:
 
 (definitions from [W3Schools](https://www.w3schools.com/cssref/css3_pr_animation.asp))
 
-### ✨ Follow along in the next [Codepen](https://codepen.io/zanewhit/pen/YzqaqKR)!!
+### ✨ Follow along in the next [Codepen](http://codepen.io/jlr7245/pen/evwaNK?editors=0100)!!
 
 ## Transforms
 
 Transforms allow you to rotate, skew, and pivot your HTML elements in 3D space! While you'll still be rendering your result on a 2D canvas - your computer screen - you can still move your object around like it were a physical object. `transform` is just one property, but it has about 20 possible values. 
 
 A neat thing about transforms is that they affect not only the element they're applied to but also the element's children.
-
-### ✨ Let's see this in action! Follow along in [this codepen](http://codepen.io/jlr7245/pen/evwaNK?editors=0100)
-
 
 There are four main types of transformations: skew, rotate, translate, and scale. These demos all use them in the context of animation, but you can also just use them on an element -- this is probably most common with rotate. (Want text a little bit slanted? That's `transform: rotate(10deg);`)
 <details>
@@ -159,7 +156,18 @@ Some of these demos have been paired with an extra value, `perspective(n)`. You 
 ### Practice with turning drawings into animations using keyframes!
 
 - Create a fork of [this codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100).
+- Your goal is to make the gray circle turn green, then purple, then red, while moving from the left side of its parent container to the right.
 - Write out the steps you think the animation will need.
+- Draw out some keyframes. How many steps will there be?
 - Make the animation happen! 
 
-**Note**: You won't need to use the `transform` property for this lab
+**Note**: You won't need to use the `transform` property for this exercise.
+
+If you get stuck, a solution can be found in [this codepen](https://codepen.io/zanewhit/pen/YzqaqKR) (don't cheat!)
+
+- Once you get that animation working, try different animation properties. 
+- Can you make the circle go back and forth or up and down?
+- What about making it bounce like a bouncy ball? Try adding some transforms to make the circle compress and stretch to mimic an actual bouncy ball.
+- What else can you make it do?
+
+

@@ -153,7 +153,7 @@ Some of these demos have been paired with an extra value, `perspective(n)`. You 
 
 # 💥 Exercise
 
-### Practice with turning drawings into animations using keyframes!
+#### Practice with turning drawings into animations using keyframes!
 
 - Create a fork of [this codepen](http://codepen.io/jlr7245/pen/BWgvxo?editors=1100).
 - Your goal is to make the gray circle turn green, then purple, then red, while moving from the left side of its parent container to the right. Make this animation take 2 seconds to complete, and repeat 5 times. 
@@ -165,14 +165,14 @@ Some of these demos have been paired with an extra value, `perspective(n)`. You 
 
 If you get stuck, a solution can be found in [this codepen](https://codepen.io/zanewhit/pen/YzqaqKR) (don't cheat!)
 
-# 💥 Bonus
+### 💥 Bonus
 
-### Once you get that animation working, try different animation properties. 
+#### Once you get that animation working, try different animation properties. 
 
 - Can you make the circle go back and forth instead of starting over on the left? 
 - How about making it move up and down?
 - What happens if you add some transforms now? Make the ball squash and stretch as it moves up and down.
 
-# 💥 Extra Bonus
+### 💥 Extra Bonus
 
 Looking for more of a challenge? Try making the circle bounce up and down and across the page like a bouncy ball! Check out some [animation tutorials on YouTube](https://www.youtube.com/results?search_query=bouncing+ball+2d+animation) to get some tips. This one is pretty tricky, don't worry if you can't get it to look right!
